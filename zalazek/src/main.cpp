@@ -21,10 +21,10 @@ int main()
 
 	while(int flag = Wyrazenie.Wprowadz(x, y))
 	{
-		++Stat.Dzialania;
-		if(flag != -3) ++Stat.Poprawnie_Zapisane_Dzialania;
-		if(flag > 0) ++Stat.Poprawne_Dzialania;
-		if(flag == 1 || flag == -1) ++Stat.Dodawania_Lub_Odejmowania;
+		Stat.Inkrementuj_Dzialania();
+		if(flag != -3) Stat.Inkrementuj_Poprawnie_Zapisane_Dzialania();
+		if(flag > 0) Stat.Inkrementuj_Poprawne_Dzialania();
+		if(flag == 1 || flag == -1) Stat.Inkrementuj_Dodawania_Lub_Odejmowania();
 	}
 
 	Stat.Wyswietl_Dane();

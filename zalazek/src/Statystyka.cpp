@@ -7,6 +7,25 @@
  *  i akceptowalny zbior operacji na strukturze Statystyka.
  */
 
+unsigned Statystyka::Inkrementuj_Dzialania()
+{
+	return ++Dzialania;
+}
+unsigned Statystyka::Inkrementuj_Poprawnie_Zapisane_Dzialania()
+{
+	return ++Poprawnie_Zapisane_Dzialania;
+}
+unsigned Statystyka::Inkrementuj_Poprawne_Dzialania()
+{
+	return ++Poprawne_Dzialania;
+}
+unsigned Statystyka::Inkrementuj_Dodawania_Lub_Odejmowania()
+{
+	return ++Dzialania;
+}
+
+
+
 
 void Statystyka::Wyswietl_Dane()
 {

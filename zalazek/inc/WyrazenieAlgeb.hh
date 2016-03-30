@@ -2,7 +2,6 @@
 #define WYRAZENIEALGEB_HH
 
 enum class Symbol;
-class Statystyka;
 
 struct WyrazenieAlgeb {
 

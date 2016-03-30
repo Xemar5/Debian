@@ -11,22 +11,6 @@
  *  i akceptowalny zbior operacji na strukturze WyrazenieAlgeb.
  */
 
-std::istream& operator>>(std::istream& is, Symbol& sym)
-{
-	Symbol tab[] = {Symbol::a,Symbol::b,Symbol::c,Symbol::d,Symbol::e};
-	char znak;
-	is >> znak;
-	if(strchr("abcde", znak))
-	{
-		sym = tab[znak-'a'];
-	}
-	else
-	{
-		sym = Symbol::blad;
-	}
-	
-	return is;
-}
 
 
 int WyrazenieAlgeb::Wprowadz(Symbol& arg1, Symbol& arg2)
@@ -85,6 +69,7 @@ char Tab_Symboli[] = {'e','a','b','c','d'};
 	if(dzialanie == '/')
 	{
 		Symbol prawdziwy_wynik = arg1 / arg2;
+		if(arg2 == Symbol::e) return -2;
 		if(prawdziwy_wynik == wynik) {std::cout << "Dzialanie poprawne\n"; return 2;}
 		else {std::cout << "Wynik niepoprawny; Prawdziwe rozwizanie: "
 										<< Tab_Symboli[(int)prawdziwy_wynik]

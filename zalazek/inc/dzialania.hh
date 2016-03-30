@@ -103,14 +103,14 @@ void operator/=(Symbol& wyn, Symbol arg)
 	if(arg == Symbol::e)
 	{
 		cout << "Nie dziel przez e!" << endl;
-		//return e;
+		return void();
 	}
 	int i = 1;
 	while(Tablica_Mnozenia[i][(int)arg] != Symbol::a) i++;
 	if(i >= 5)
 	{
 		cout << "Symbol nie zawiera podanego elementu" << endl;
-		//return e;
+		return void();
 	}
 	wyn = Tablica_Dodawania[i][0];	
 }

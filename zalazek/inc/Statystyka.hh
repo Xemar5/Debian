@@ -2,7 +2,7 @@
 #define STATYSTYKA_HH
 
 
-struct Statystyka {
+class Statystyka {
 
   /*
    *  Tutaj trzeba wstawic definicje odpowiednich pol
@@ -12,6 +12,11 @@ struct Statystyka {
 	unsigned Poprawne_Dzialania = 0;
 	unsigned Dodawania_Lub_Odejmowania = 0;
 
+public:
+	unsigned Inkrementuj_Dzialania();
+	unsigned Inkrementuj_Poprawnie_Zapisane_Dzialania();
+	unsigned Inkrementuj_Poprawne_Dzialania();
+	unsigned Inkrementuj_Dodawania_Lub_Odejmowania();
 	void Wyswietl_Dane();
 };
 
