@@ -1,5 +1,5 @@
 #include "../inc/WyrazenieAlgeb.hh"
-#include "dzialania.hh"
+#include "../inc/dzialania.hh"
 #include "../inc/Statystyka.hh"
 #include <iostream>
 #include <string.h>
