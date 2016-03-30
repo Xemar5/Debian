@@ -23,8 +23,6 @@ std::istream& operator>>(std::istream& is, Symbol& sym)
 	else
 	{
 		sym = Symbol::blad;
-		is.unget();
-		is.setstate(std::ios::failbit);
 	}
 	
 	return is;
@@ -38,8 +36,9 @@ char Tab_Symboli[] = {'e','a','b','c','d'};
 	Symbol wynik;
 	char dzialanie;
 	char znak_rownosci;
+
 	std::cin >> arg1 >> dzialanie >> arg2 >> znak_rownosci >> wynik;
-	
+
 	if(cin.eof()) return 0;
 
 	if(arg1 == Symbol::blad)

@@ -23,9 +23,11 @@ int main()
 	{
 		++Stat.Dzialania;
 		if(flag != -3) ++Stat.Poprawnie_Zapisane_Dzialania;
-		if(flag > 0) ++Stat.Poprawne_Dzialania
-		if(flag == 1 || flag == -1) ++Stat.Dodawania_Lub_Odejmowania
+		if(flag > 0) ++Stat.Poprawne_Dzialania;
+		if(flag == 1 || flag == -1) ++Stat.Dodawania_Lub_Odejmowania;
 	}
+
+	Stat.Wyswietl_Dane();
   
   cout << "Start sprawdzianu testu arytmetyki symboli" << endl;
 }
