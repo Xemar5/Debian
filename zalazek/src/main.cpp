@@ -19,7 +19,13 @@ int main()
   Statystyka       Stat;
   WyrazenieAlgeb   Wyrazenie;
 
-	Wyrazenie.Wprowadz(x, y);
+	while(int flag = Wyrazenie.Wprowadz(x, y))
+	{
+		++Stat.Dzialania;
+		if(flag != -3) ++Stat.Poprawnie_Zapisane_Dzialania;
+		if(flag > 0) ++Stat.Poprawne_Dzialania
+		if(flag == 1 || flag == -1) ++Stat.Dodawania_Lub_Odejmowania
+	}
   
   cout << "Start sprawdzianu testu arytmetyki symboli" << endl;
 }

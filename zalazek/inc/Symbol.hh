@@ -3,5 +3,4 @@
 
 enum class Symbol { e, a, b, c, d, blad };
 
-
 #endif
