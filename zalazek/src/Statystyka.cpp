@@ -21,7 +21,7 @@ unsigned Statystyka::Inkrementuj_Poprawne_Dzialania()
 }
 unsigned Statystyka::Inkrementuj_Dodawania_Lub_Odejmowania()
 {
-	return ++Dzialania;
+	return ++Dodawania_Lub_Odejmowania;
 }
 
 
