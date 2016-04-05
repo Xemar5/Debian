@@ -1,4 +1,4 @@
-#include "../inc/Statystyka.hh"
+#include "Statystyka.hh"
 #include <iostream>
 
 /*

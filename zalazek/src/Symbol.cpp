@@ -1,4 +1,4 @@
-#include "../inc/Symbol.hh"
+#include "Symbol.hh"
 #include <string.h>
 
 std::istream& operator>>(std::istream& is, Symbol& sym)

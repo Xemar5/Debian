@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../inc/Symbol.hh"
+#include "Symbol.hh"
 
 using namespace std;
 

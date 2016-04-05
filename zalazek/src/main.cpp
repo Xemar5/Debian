@@ -1,7 +1,7 @@
 #include <iostream>
-#include "../inc/WyrazenieAlgeb.hh"
-#include "../inc/Statystyka.hh"
-#include "../inc/Symbol.hh"
+#include "WyrazenieAlgeb.hh"
+#include "Statystyka.hh"
+#include "Symbol.hh"
 
 using namespace std;
 
@@ -19,6 +19,13 @@ int main()
   Statystyka       Stat;
   WyrazenieAlgeb   Wyrazenie;
 
+	std::cout << "\nPawel Stolarczyk\nWprowadz Rownanie w postaci x+y=z, gdzie:\n"
+							 "x - pierwszy argument\n"
+							 "y - drugi argument\n"
+							 "z - twoj wynik\n"
+							 "+ - dowolny operator ( + - * lub / )\n"
+							 "ctrl + D, aby zakonczyc wpisywanie rownan\n";
+
 	while(int flag = Wyrazenie.Wprowadz(x, y))
 	{
 		Stat.Inkrementuj_Dzialania();
@@ -29,5 +36,5 @@ int main()
 
 	Stat.Wyswietl_Dane();
   
-  cout << "Start sprawdzianu testu arytmetyki symboli" << endl;
+  cout << "Koniec programu\n" << endl;
 }
